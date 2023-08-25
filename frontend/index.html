@@ -11,23 +11,28 @@
       defer
     ></script>
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
-    myTrakr
-    <main>
-      <form action="">
+  <body class="mt-4">
+    <h1 class="text-center">myTrakr</h1>
+    <main class="container">
+      
+      <form class="mb-4" action="">
         New Account:
         <input type="text" />
-        <button>Add new account</button>
+        <button class="btn btn-primary">Add new account</button>
       </form>
-      <form action="">
+
+      <form class="mb-4" action="">
         New Transaction: Deposit
         <input type="radio" />
         Withdraw
         <input type="radio" />
         Transfer
         <input type="radio" />
+
+        <br><br>
         Account:
         <select></select>
 
@@ -36,21 +41,24 @@
 
         To:
         <select></select>
+
+        <br><br>
         Category:
         <select></select>
         <input type="text" />
-        <button type="button">Add new category</button>
+        <button class="btn btn-primary" type="button">Add new category</button>
 
+        <br><br>
         Description
         <input type="text" />
 
         Amount:
         <input type="number" />
 
-        <button>Add transaction</button>
+        <button class="btn btn-success">Add transaction</button>
       </form>
 
-      Account summary
+      <h2>Account summary</h2>
       <ul></ul>
       Filter by account:
       <select></select>
